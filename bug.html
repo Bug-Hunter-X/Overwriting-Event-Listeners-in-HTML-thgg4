@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Incorrect way to add an event listener
+    document.getElementById("myDiv").onclick = function() {
+      alert("Div clicked!");
+    };
+
+    // Adding a second event listener will overwrite the first one
+    document.getElementById("myDiv").onclick = function() {
+      alert("Div clicked again!");
+    };
+  </script>
+</body>
+</html>
